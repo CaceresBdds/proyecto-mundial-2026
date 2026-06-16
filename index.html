@@ -1,0 +1,261 @@
+<!-- Versión del proyecto entregable -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundial 2026</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="inicio">
+        <h1>Mundial 2026</h1>
+
+        <p>
+          Página informativa sobre el Mundial 2026, con selecciones, fixture,
+          estadios y una sección para elegir tu equipo favorito.
+        </p>
+
+        <p>
+          El objetivo de esta página es presentar información general del torneo
+          y permitir que el usuario complete algunos datos relacionados con su
+          seguimiento del Mundial.
+        </p>
+
+        <img
+          src="https://dfbsports.com.ar/wp-content/uploads/2025/08/dplnews_fifa-26_mc28923-1024x607.webp"
+          alt="Logo del Mundial 2026 junto a la Copa del Mundo de la FIFA"
+          width="600"
+        />
+      </section>
+
+      <section id="seleccion">
+        <h2>¿Cuál es tu selección?</h2>
+
+        <p>
+          Elegí una selección favorita para seguir durante el Mundial 2026.
+          En una futura versión, esta sección podría mostrar información dinámica
+          sobre sus convocados y partidos.
+        </p>
+
+        <form action="https://httpbin.org/post" method="POST">
+          <fieldset>
+            <legend>Elegí tu selección favorita</legend>
+
+            <input
+              type="radio"
+              id="argentina"
+              name="seleccion"
+              value="argentina"
+              checked
+            />
+            <label for="argentina">Argentina</label>
+
+            <input
+              type="radio"
+              id="brasil"
+              name="seleccion"
+              value="brasil"
+            />
+            <label for="brasil">Brasil</label>
+
+            <input
+              type="radio"
+              id="francia"
+              name="seleccion"
+              value="francia"
+            />
+            <label for="francia">Francia</label>
+          </fieldset>
+
+          <button type="submit">Elegir selección</button>
+        </form>
+
+        <h3>Jugadores convocados</h3>
+
+        <p>
+          Los convocados de una selección suelen organizarse según su posición
+          dentro del campo de juego.
+        </p>
+
+        <ul>
+          <li>Arqueros</li>
+          <li>Defensores</li>
+          <li>Mediocampistas</li>
+          <li>Delanteros</li>
+        </ul>
+      </section>
+
+      <section id="fixture">
+        <h2>Completá el fixture</h2>
+
+        <p>
+          En esta sección podés completar manualmente un partido del fixture del
+          Mundial 2026. Ingresá el encuentro, seleccioná la fase del torneo y marcá
+          qué recordatorios querés asociar a ese partido para organizar tu seguimiento
+          del campeonato.
+        </p>
+
+        <form action="https://httpbin.org/post" method="POST">
+          <p>
+            <label for="partido">Partido:</label>
+          </p>
+
+          <input
+            type="text"
+            id="partido"
+            name="partido"
+            placeholder="Ejemplo: Argentina vs Brasil"
+            required
+          />
+
+          <fieldset>
+            <legend>Fase del torneo</legend>
+
+            <input
+              type="radio"
+              id="fase-grupos"
+              name="fase"
+              value="fase-grupos"
+              checked
+            />
+            <label for="fase-grupos">Fase de grupos</label>
+
+            <input
+              type="radio"
+              id="octavos"
+              name="fase"
+              value="octavos"
+            />
+            <label for="octavos">Octavos de final</label>
+
+            <input
+              type="radio"
+              id="cuartos"
+              name="fase"
+              value="cuartos"
+            />
+            <label for="cuartos">Cuartos de final</label>
+
+            <input
+              type="radio"
+              id="semifinal"
+              name="fase"
+              value="semifinal"
+            />
+            <label for="semifinal">Semifinal</label>
+
+            <input
+              type="radio"
+              id="final"
+              name="fase"
+              value="final"
+            />
+            <label for="final">Final</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Recordatorios para este partido</legend>
+
+            <input
+              type="checkbox"
+              id="recordar-horario"
+              name="recordatorios"
+              value="horario"
+            />
+            <label for="recordar-horario">Recordar horario</label>
+
+            <input
+              type="checkbox"
+              id="ver-alineaciones"
+              name="recordatorios"
+              value="alineaciones"
+            />
+            <label for="ver-alineaciones">Revisar alineaciones</label>
+
+            <input
+              type="checkbox"
+              id="guardar-resultado"
+              name="recordatorios"
+              value="resultado"
+            />
+            <label for="guardar-resultado">Guardar resultado final</label>
+          </fieldset>
+
+          <button type="submit">Guardar partido</button>
+        </form>
+
+        <h3>Ejemplo de fixture</h3>
+
+        <ol>
+          <li>Argentina vs Brasil - Fase de grupos</li>
+          <li>Francia vs Alemania - Octavos de final</li>
+          <li>España vs Inglaterra - Final</li>
+        </ol>
+      </section>
+
+      <section id="sedes">
+        <h2>Estadios y sedes</h2>
+
+        <p>
+            El Mundial 2026 se disputará en distintas sedes de México, Canadá y Estados
+            Unidos. Algunos estadios tendrán un papel destacado al recibir partidos
+            inaugurales o encuentros importantes del torneo.
+        </p>
+
+        <figure>
+            <img
+            src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2026/05/dji_fly_20260424_151656_738_1777065627468_photo-scaled.jpg"
+            alt="Estadio Azteca de México, una de las sedes principales del Mundial 2026"
+            width="600"
+            />
+            <figcaption>
+            Estadio Azteca, México: una de las sedes históricas del fútbol mundial.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img
+            src="https://i0.wp.com/efe.com/wp-content/uploads/2026/06/002-7.webp?w=900&ssl=1"
+            alt="Estadio de Toronto en Canadá preparado para recibir partidos del Mundial 2026"
+            width="600"
+            />
+            <figcaption>
+            Estadio de Toronto, Canadá: sede canadiense del Mundial 2026.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img
+            src="https://images.copaamerica.com/editions/copa-america-2024/stadiums/sofi-stadium-photo.webp"
+            alt="SoFi Stadium de Los Ángeles en Estados Unidos, sede del Mundial 2026"
+            width="600"
+            />
+            <figcaption>
+            SoFi Stadium, Los Ángeles: una de las sedes destacadas de Estados Unidos.
+            </figcaption>
+        </figure>
+
+        <p>
+            Para conocer más información sobre el torneo, podés visitar el
+            <a href="https://www.fifa.com/" target="_blank">sitio oficial de FIFA</a>.
+        </p>
+
+        <p>
+            También podés volver a la sección
+            <a href="#fixture">Completá el fixture</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Proyecto realizado para Práctica Profesionalizante I -
+        <a href="https://www.iesmb.edu.ar/bel/" target="_blank">
+          IES Manuel Belgrano
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
