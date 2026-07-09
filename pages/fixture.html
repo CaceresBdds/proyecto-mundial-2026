@@ -10,23 +10,33 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="selecciones.html">Selecciones</a>
-        <a href="fixture.html" class="active">Fixture</a>
-        <a href="estadios.html">Estadios</a>
+    <header class="site-header">
+      <figure class="site-header__logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="Logo del Mundial 2026"
+          width="50"
+        />
+      </figure>
+      <nav class="site-nav">
+        <a href="../index.html" class="site-nav__link">Inicio</a>
+        <a href="selecciones.html" class="site-nav__link">Selecciones</a>
+        <a href="fixture.html" class="site-nav__link site-nav__link--active">Fixture</a>
+        <a href="estadios.html" class="site-nav__link">Estadios</a>
       </nav>
     </header>
 
-    <main>
-      <section id="fixture-grupos">
-        <h1>Fixture</h1>
+    <main class="fixture-page">
+      <section id="fixture-grupos" class="fixture-groups-section">
+        <div class="page-hero">
+        <p class="page-hero__label">Calendario del torneo</p>
+        <h1 class="page-hero__title">Fixture</h1>
 
-        <p>
+        <p class="page-hero__description">
           Fixture de la fase de grupos del Mundial 2026, organizado por grupo,
           fecha, sede, partido y resultado.
         </p>
+        </div>
 
         <article class="grupo-fixture">
           <h2>Grupo A: México, Sudáfrica, Corea del Sur y Rep. Chequia</h2>
@@ -676,7 +686,7 @@
           </table>
         </article>
       </section>
-      <section id="fase-eliminatoria">
+      <section id="fase-eliminatoria" class="knockout-section">
   <h2>Fase eliminatoria</h2>
 
   <p>
@@ -765,7 +775,7 @@
 
         <article class="partido">
           <p class="equipo">España</p>
-          <p class="equipo">Ganador EE.UU. / Bélgica</p>
+          <p class="equipo">Bélgica</p>
         </article>
       </div>
 
@@ -774,7 +784,7 @@
 
         <article class="partido">
           <p class="equipo">Ganador Francia / Marruecos</p>
-          <p class="equipo">Ganador España / EE.UU.-Bélgica</p>
+          <p class="equipo">Ganador España / Bélgica</p>
         </article>
       </div>
     </div>
@@ -811,7 +821,7 @@
         </article>
 
         <article class="partido">
-          <p class="equipo">Ganador Argentina / Egipto</p>
+          <p class="equipo">Argentina</p>
           <p class="equipo">Suiza</p>
         </article>
       </div>
@@ -888,10 +898,15 @@
 </section>
     </main>
 
-    <footer>
-      <p>Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
+    <footer class="site-footer">
+      <p class="site-footer__text">Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
       <p>
-        <a href="../index.html">Volver al inicio</a>
+        <a 
+          href="../index.html"
+          class="site-footer__link"
+        >
+          Volver al inicio
+        </a>
       </p>
     </footer>
   </body>
