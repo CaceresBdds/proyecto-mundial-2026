@@ -10,30 +10,55 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="selecciones.html">Selecciones</a>
-        <a href="fixture.html">Fixture</a>
-        <a href="estadios.html" class="active">Estadios</a>
+    <header class="site-header">
+      <figure class="site-header__logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="Logo del Mundial 2026"
+          width="50"
+        />
+      </figure>
+      <nav class="site-nav">
+        <a href="../index.html" class="site-nav__link">Inicio</a>
+        <a href="selecciones.html" class="site-nav__link">Selecciones</a>
+        <a href="fixture.html" class="site-nav__link">Fixture</a>
+        <a href="estadios.html" class="site-nav__link site-nav__link--active">Estadios</a>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>Estadios</h1>
+<main class="stadiums-page">
+  <section class="page-hero">
+    <p class="page-hero__label">Sedes del torneo</p>
 
-        <p>
-          El Mundial 2026 se disputará en distintas sedes de México, Canadá y
-          Estados Unidos. En esta sección se muestran algunos estadios
-          importantes del torneo.
-        </p>
-      </section>
+    <h1 class="page-hero__title">Estadios</h1>
 
-      <section>
-        <h2>Sedes del Mundial 2026</h2>
+    <p class="page-hero__description">
+      El Mundial 2026 se disputará en distintas sedes de México, Canadá y
+      Estados Unidos. En esta sección se muestran algunos estadios importantes
+      del torneo.
+    </p>
+  </section>
 
-        <article>
+  <section class="stadiums-section">
+    <div class="section-heading">
+      <h2>Sedes del Mundial 2026</h2>
+      <p>
+        Conocé algunos de los estadios que recibirán partidos durante la
+        competencia.
+      </p>
+    </div>
+
+    <div class="stadiums-grid">
+      <article class="stadium-card">
+        <figure class="stadium-card__image">
+          <img
+            src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2026/05/dji_fly_20260424_151656_738_1777065627468_photo-scaled.jpg"
+            alt="Estadio Azteca de México, sede del Mundial 2026"
+          />
+        </figure>
+
+        <div class="stadium-card__content">
+          <p class="stadium-card__country">México</p>
           <h3>Estadio Azteca</h3>
 
           <p>
@@ -41,59 +66,59 @@
             del fútbol mundial y será una de las sedes destacadas del Mundial
             2026.
           </p>
+        </div>
+      </article>
 
-          <figure>
-            <img
-              src="https://mexicocity.cdmx.gob.mx/wp-content/uploads/2026/05/dji_fly_20260424_151656_738_1777065627468_photo-scaled.jpg"
-              alt="Estadio Azteca de México, sede del Mundial 2026"
-              width="500"
-            />
-            <figcaption>Estadio Azteca - México</figcaption>
-          </figure>
-        </article>
+      <article class="stadium-card">
+        <figure class="stadium-card__image">
+          <img
+            src="https://i0.wp.com/efe.com/wp-content/uploads/2026/06/002-7.webp?w=900&ssl=1"
+            alt="Estadio de Toronto en Canadá, sede del Mundial 2026"
+          />
+        </figure>
 
-        <article>
+        <div class="stadium-card__content">
+          <p class="stadium-card__country">Canadá</p>
           <h3>Estadio de Toronto</h3>
 
           <p>
             El estadio de Toronto será una de las sedes de Canadá durante el
             Mundial 2026.
           </p>
+        </div>
+      </article>
 
-          <figure>
-            <img
-              src="https://i0.wp.com/efe.com/wp-content/uploads/2026/06/002-7.webp?w=900&ssl=1"
-              alt="Estadio de Toronto en Canadá, sede del Mundial 2026"
-              width="500"
-            />
-            <figcaption>Estadio de Toronto - Canadá</figcaption>
-          </figure>
-        </article>
+      <article class="stadium-card">
+        <figure class="stadium-card__image">
+          <img
+            src="https://images.copaamerica.com/editions/copa-america-2024/stadiums/sofi-stadium-photo.webp"
+            alt="SoFi Stadium de Los Ángeles, sede del Mundial 2026"
+          />
+        </figure>
 
-        <article>
+        <div class="stadium-card__content">
+          <p class="stadium-card__country">Estados Unidos</p>
           <h3>SoFi Stadium</h3>
 
           <p>
             Ubicado en Los Ángeles, Estados Unidos, es uno de los estadios
             modernos que recibirá partidos importantes del torneo.
           </p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
 
-          <figure>
-            <img
-              src="https://images.copaamerica.com/editions/copa-america-2024/stadiums/sofi-stadium-photo.webp"
-              alt="SoFi Stadium de Los Ángeles, sede del Mundial 2026"
-              width="500"
-            />
-            <figcaption>SoFi Stadium - Estados Unidos</figcaption>
-          </figure>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <p>Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
+    <footer class="site-footer">
+      <p class="site-footer__text">Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
       <p>
-        <a href="../index.html">Volver al inicio</a>
+        <a
+          href="../index.html"
+          class="site-footer__link"
+        >
+          Volver al inicio
+        </a>
       </p>
     </footer>
   </body>

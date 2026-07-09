@@ -3,40 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Selecciones | Mundial 2026</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="selecciones.html" class="active">Selecciones</a>
-        <a href="fixture.html">Fixture</a>
-        <a href="estadios.html">Estadios</a>
+    <header class="site-header">
+      <figure class="site-header__logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="Logo del Mundial 2026"
+          width="50"
+        />
+      </figure>
+      <nav class="site-nav">
+        <a href="/index.html" class="site-nav__link">Inicio</a>
+        <a href="selecciones.html" class="site-nav__link site-nav__link--active">Selecciones</a>
+        <a href="fixture.html" class="site-nav__link">Fixture</a>
+        <a href="estadios.html" class="site-nav__link">Estadios</a>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>Selecciones</h1>
+<main class="teams-page">
+  <section class="page-hero">
+    <p class="page-hero__label">Equipos participantes</p>
 
-        <label for="seleccion">Elija una seleccion:</label>
-        <select id="seleccion" name="seleccion">
-          <option>Argentina</option>
-          <option>Brasil</option>
-          <option>Francia</option>
+    <h1 class="page-hero__title">Selecciones</h1>
+
+    <p class="page-hero__description">
+      En esta sección se podrá consultar información sobre las selecciones
+      participantes del Mundial 2026 y visualizar datos de sus convocados.
+    </p>
+  </section>
+
+  <section class="teams-selector-section">
+    <div class="teams-selector-card">
+      <div>
+        <h2>Buscar selección</h2>
+        <p>
+          Seleccioná un equipo para consultar su información. Esta funcionalidad
+          será completada más adelante con JavaScript.
+        </p>
+      </div>
+
+      <form class="teams-form">
+        <label for="seleccion" class="teams-form__label">
+          Elija una selección:
+        </label>
+
+        <select id="seleccion" name="seleccion" class="teams-form__select">
+          <option value="">Seleccione una opción</option>
+          <option value="argentina">Argentina</option>
+          <option value="brasil">Brasil</option>
+          <option value="francia">Francia</option>
         </select>
-      </section>
+      </form>
+    </div>
+  </section>
 
-      <section id="convocados">
-        <h2>Convocados de la selección seleccionada</h2>
-
-        <p>Seleccione una selección para ver sus convocados.</p>
-      </section>
-    </main>
-    <footer>
-      <p>Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
+  <section id="convocados" class="teams-preview-section">
+    <div class="section-heading">
+      <h2>Selecciones destacadas</h2>
       <p>
-        <a href="../index.html">Volver al inicio</a>
+        Vista previa de cómo se mostrará la información de cada selección.
+      </p>
+    </div>
+
+    <div class="teams-grid">
+      <article class="team-card">
+        <p class="team-card__country">Argentina</p>
+        <h3>Selección Argentina</h3>
+
+        <p>
+          Actual campeona del mundo. En esta tarjeta se podrá mostrar
+          información general, jugadores destacados y convocados.
+        </p>
+
+        <ul class="team-card__list">
+          <li>Confederación: CONMEBOL</li>
+          <li>Zona: Sudamérica</li>
+          <li>Estado: información de ejemplo</li>
+        </ul>
+      </article>
+
+      <article class="team-card">
+        <p class="team-card__country">Brasil</p>
+        <h3>Selección de Brasil</h3>
+
+        <p>
+          Una de las selecciones más históricas del fútbol mundial. Esta sección
+          permitirá consultar datos del equipo y sus jugadores.
+        </p>
+
+        <ul class="team-card__list">
+          <li>Confederación: CONMEBOL</li>
+          <li>Zona: Sudamérica</li>
+          <li>Estado: información de ejemplo</li>
+        </ul>
+      </article>
+
+      <article class="team-card">
+        <p class="team-card__country">Francia</p>
+        <h3>Selección de Francia</h3>
+
+        <p>
+          Selección europea con gran presencia internacional. Más adelante se
+          podrá visualizar información dinámica de sus convocados.
+        </p>
+
+        <ul class="team-card__list">
+          <li>Confederación: UEFA</li>
+          <li>Zona: Europa</li>
+          <li>Estado: información de ejemplo</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+    <footer class="site-footer">
+      <p class="site-footer__text">Proyecto Mundial 2026 - Práctica Profesionalizante I</p>
+      <p>
+        <a 
+          href="../index.html"
+          class="site-footer__link"
+        >
+          Volver al inicio
+        </a>
       </p>
     </footer>
   </body>

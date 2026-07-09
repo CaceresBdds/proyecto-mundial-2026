@@ -10,90 +10,129 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="active">Inicio</a>
-        <a href="pages/selecciones.html">Selecciones</a>
-        <a href="pages/fixture.html">Fixture</a>
-        <a href="pages/estadios.html">Estadios</a>
+    <header class="site-header">
+      <figure class="site-header__logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="Logo del Mundial 2026"
+          width="50"
+        />
+      </figure>
+      <nav class="site-nav">
+        <a href="index.html" class="site-nav__link site-nav__link--active">Inicio</a>
+        <a href="pages/selecciones.html" class="site-nav__link">Selecciones</a>
+        <a href="pages/fixture.html" class="site-nav__link">Fixture</a>
+        <a href="pages/estadios.html" class="site-nav__link">Estadios</a>
       </nav>
     </header>
 
-    <main>
-      <section id="inicio">
-        <h1>Mundial 2026</h1>
+<main class="home">
+  <section id="inicio" class="home-hero">
+    <div class="home-hero__content">
+      <p class="home-hero__label">Mundial FIFA 2026</p>
 
-        <p>
-          Sitio informativo sobre el Mundial 2026, con secciones dedicadas a
-          selecciones, fixture, estadios y sedes del torneo.
-        </p>
+      <h1 class="home-hero__title">Mundial 2026</h1>
 
-        <p>
-          El objetivo de este proyecto es organizar información del campeonato
-          en distintas páginas, aplicando estructura HTML semántica, navegación
-          entre módulos y, más adelante, estilos con CSS e interacción con
-          JavaScript.
-        </p>
+      <p class="home-hero__description">
+        Sitio informativo sobre el Mundial 2026, con secciones dedicadas a
+        selecciones, fixture, estadios y sedes del torneo.
+      </p>
 
-        <img
-          src="https://dfbsports.com.ar/wp-content/uploads/2025/08/dplnews_fifa-26_mc28923-1024x607.webp"
-          alt="Logo del Mundial 2026 junto a la Copa del Mundo de la FIFA"
-          width="600"
-        />
-      </section>
+      <p class="home-hero__description">
+        El objetivo de este proyecto es organizar información del campeonato
+        en distintas páginas, aplicando estructura HTML semántica, navegación
+        entre módulos y, más adelante, estilos con CSS e interacción con
+        JavaScript.
+      </p>
 
-      <section id="modulos">
-        <h2>Secciones del sitio</h2>
+      <div class="home-hero__actions">
+        <a class="button button--primary" href="pages/fixture.html">
+          Ver fixture
+        </a>
 
-        <article>
-          <h3>Selecciones</h3>
-          <p>
-            Consultá selecciones participantes y visualizá información sobre sus
-            convocados.
-          </p>
-          <a href="pages/selecciones.html">Ver selecciones</a>
-        </article>
+        <a class="button button--secondary" href="pages/selecciones.html">
+          Ver selecciones
+        </a>
+      </div>
+    </div>
 
-        <article>
-          <h3>Fixture</h3>
-          <p>
-            Revisá los partidos de la fase de grupos y la estructura de la fase
-            eliminatoria del Mundial.
-          </p>
-          <a href="pages/fixture.html">Ver fixture</a>
-        </article>
+    <figure class="home-hero__image">
+      <img
+        src="https://dfbsports.com.ar/wp-content/uploads/2025/08/dplnews_fifa-26_mc28923-1024x607.webp"
+        alt="Logo del Mundial 2026 junto a la Copa del Mundo de la FIFA"
+      />
+    </figure>
+  </section>
 
-        <article>
-          <h3>Estadios</h3>
-          <p>
-            Conocé algunas de las sedes y estadios donde se disputará el torneo.
-          </p>
-          <a href="pages/estadios.html">Ver estadios</a>
-        </article>
-      </section>
-
-      <section id="informacion">
-        <h2>Información general</h2>
-
-        <p>
-          El Mundial 2026 será organizado por México, Canadá y Estados Unidos.
-          Esta edición tendrá una estructura ampliada, con más selecciones y más
-          partidos que ediciones anteriores.
-        </p>
-
-        <p>
-          Para conocer más información oficial sobre el torneo, podés visitar el
-          <a href="https://www.fifa.com/" target="_blank">
-            sitio oficial de FIFA
-          </a>.
-        </p>
-      </section>
-    </main>
-
-    <footer>
+  <section id="modulos" class="home-modules">
+    <div class="section-heading">
+      <h2>Secciones del sitio</h2>
       <p>
+        Explorá los módulos principales del proyecto.
+      </p>
+    </div>
+
+    <div class="home-modules__grid">
+      <article class="module-card">
+        <h3>Selecciones</h3>
+        <p>
+          Consultá selecciones participantes y visualizá información sobre sus
+          convocados.
+        </p>
+        <a class="module-card__link" href="pages/selecciones.html">
+          Ver selecciones
+        </a>
+      </article>
+
+      <article class="module-card">
+        <h3>Fixture</h3>
+        <p>
+          Revisá los partidos de la fase de grupos y la estructura de la fase
+          eliminatoria del Mundial.
+        </p>
+        <a class="module-card__link" href="pages/fixture.html">
+          Ver fixture
+        </a>
+      </article>
+
+      <article class="module-card">
+        <h3>Estadios</h3>
+        <p>
+          Conocé algunas de las sedes y estadios donde se disputará el torneo.
+        </p>
+        <a class="module-card__link" href="pages/estadios.html">
+          Ver estadios
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section id="informacion" class="home-info">
+    <h2>Información general</h2>
+
+    <p>
+      El Mundial 2026 será organizado por México, Canadá y Estados Unidos.
+      Esta edición tendrá una estructura ampliada, con más selecciones y más
+      partidos que ediciones anteriores.
+    </p>
+
+    <p>
+      Para conocer más información oficial sobre el torneo, podés visitar el
+      <a href="https://www.fifa.com/" target="_blank">
+        sitio oficial de FIFA
+      </a>.
+    </p>
+  </section>
+</main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">
         Proyecto realizado para Práctica Profesionalizante I -
-        <a href="https://www.iesmb.edu.ar/bel/" target="_blank">
+        <a
+          class="site-footer__link"
+          href="https://www.iesmb.edu.ar/bel/" 
+          target="_blank"
+        >
           IES Manuel Belgrano
         </a>
       </p>
