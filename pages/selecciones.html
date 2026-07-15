@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <title>Selecciones | Mundial 2026</title>
   </head>
   <body>
@@ -15,9 +15,9 @@
           width="50"
         />
       </figure>
-      <nav class="site-nav">
-        <a href="/index.html" class="site-nav__link">Inicio</a>
-        <a href="selecciones.html" class="site-nav__link site-nav__link--active">Selecciones</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="../index.html" class="site-nav__link">Inicio</a>
+        <a href="selecciones.html" class="site-nav__link site-nav__link--active" aria-current="page">Selecciones</a>
         <a href="fixture.html" class="site-nav__link">Fixture</a>
         <a href="estadios.html" class="site-nav__link">Estadios</a>
       </nav>
@@ -50,7 +50,7 @@
         </label>
 
         <select id="seleccion" name="seleccion" class="teams-form__select">
-          <option value="">Seleccione una opción</option>
+          <option value="" selected disabled>Seleccione una opción</option>
           <option value="argentina">Argentina</option>
           <option value="brasil">Brasil</option>
           <option value="francia">Francia</option>
