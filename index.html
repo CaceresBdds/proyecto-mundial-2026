@@ -18,120 +18,203 @@
           width="50"
         />
       </figure>
-      <nav class="site-nav">
-        <a href="index.html" class="site-nav__link site-nav__link--active">Inicio</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="index.html" class="site-nav__link site-nav__link--active" aria-current="page"
+          >Inicio</a
+        >
         <a href="pages/selecciones.html" class="site-nav__link">Selecciones</a>
         <a href="pages/fixture.html" class="site-nav__link">Fixture</a>
         <a href="pages/estadios.html" class="site-nav__link">Estadios</a>
       </nav>
     </header>
 
-<main class="home">
-  <section id="inicio" class="home-hero">
-    <div class="home-hero__content">
-      <p class="home-hero__label">Mundial FIFA 2026</p>
+    <main class="home">
+      <section id="inicio" class="home-hero">
+        <div class="home-hero__content">
+          <p class="home-hero__label">Mundial FIFA 2026</p>
 
-      <h1 class="home-hero__title">Mundial 2026</h1>
+          <h1 class="home-hero__title">Mundial 2026</h1>
 
-      <p class="home-hero__description">
-        Sitio informativo sobre el Mundial 2026, con secciones dedicadas a
-        selecciones, fixture, estadios y sedes del torneo.
-      </p>
+          <p class="home-hero__description">
+            Sitio informativo sobre el Mundial 2026, con secciones dedicadas a
+            selecciones, fixture, estadios y sedes del torneo.
+          </p>
 
-      <p class="home-hero__description">
-        El objetivo de este proyecto es organizar información del campeonato
-        en distintas páginas, aplicando estructura HTML semántica, navegación
-        entre módulos y, más adelante, estilos con CSS e interacción con
-        JavaScript.
-      </p>
+          <p class="home-hero__description">
+            El objetivo de este proyecto es organizar información del campeonato
+            en distintas páginas, aplicando estructura HTML semántica,
+            navegación entre módulos y, más adelante, estilos con CSS e
+            interacción con JavaScript.
+          </p>
 
-      <div class="home-hero__actions">
-        <a class="button button--primary" href="pages/fixture.html">
-          Ver fixture
-        </a>
+          <div class="home-hero__actions">
+            <a class="button button--primary" href="pages/fixture.html">
+              Ver fixture
+            </a>
 
-        <a class="button button--secondary" href="pages/selecciones.html">
-          Ver selecciones
-        </a>
-      </div>
-    </div>
+            <a class="button button--secondary" href="pages/selecciones.html">
+              Ver selecciones
+            </a>
+          </div>
+        </div>
 
-    <figure class="home-hero__image">
-      <img
-        src="https://dfbsports.com.ar/wp-content/uploads/2025/08/dplnews_fifa-26_mc28923-1024x607.webp"
-        alt="Logo del Mundial 2026 junto a la Copa del Mundo de la FIFA"
-      />
-    </figure>
-  </section>
+        <figure class="home-hero__image">
+          <img
+            src="https://dfbsports.com.ar/wp-content/uploads/2025/08/dplnews_fifa-26_mc28923-1024x607.webp"
+            alt="Logo del Mundial 2026 junto a la Copa del Mundo de la FIFA"
+          />
+        </figure>
+      </section>
 
-  <section id="modulos" class="home-modules">
-    <div class="section-heading">
-      <h2>Secciones del sitio</h2>
-      <p>
-        Explorá los módulos principales del proyecto.
-      </p>
-    </div>
+      <section id="modulos" class="home-modules">
+        <div class="section-heading">
+          <h2>Secciones del sitio</h2>
+          <p>Explorá los módulos principales del proyecto.</p>
+        </div>
 
-    <div class="home-modules__grid">
-      <article class="module-card">
-        <h3>Selecciones</h3>
+        <div class="home-modules__grid">
+          <article class="module-card">
+            <h3>Selecciones</h3>
+            <p>
+              Consultá selecciones participantes y visualizá información sobre
+              sus convocados.
+            </p>
+            <a class="module-card__link" href="pages/selecciones.html">
+              Ver selecciones
+            </a>
+          </article>
+
+          <article class="module-card">
+            <h3>Fixture</h3>
+            <p>
+              Revisá los partidos de la fase de grupos y la estructura de la
+              fase eliminatoria del Mundial.
+            </p>
+            <a class="module-card__link" href="pages/fixture.html">
+              Ver fixture
+            </a>
+          </article>
+
+          <article class="module-card">
+            <h3>Estadios</h3>
+            <p>
+              Conocé algunas de las sedes y estadios donde se disputará el
+              torneo.
+            </p>
+            <a class="module-card__link" href="pages/estadios.html">
+              Ver estadios
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="informacion" class="home-info">
+        <h2>Información general</h2>
+
         <p>
-          Consultá selecciones participantes y visualizá información sobre sus
-          convocados.
+          El Mundial 2026 será organizado por México, Canadá y Estados Unidos.
+          Esta edición tendrá una estructura ampliada, con más selecciones y más
+          partidos que ediciones anteriores.
         </p>
-        <a class="module-card__link" href="pages/selecciones.html">
-          Ver selecciones
-        </a>
-      </article>
 
-      <article class="module-card">
-        <h3>Fixture</h3>
         <p>
-          Revisá los partidos de la fase de grupos y la estructura de la fase
-          eliminatoria del Mundial.
+          Para conocer más información oficial sobre el torneo, podés visitar el
+          <a href="https://www.fifa.com/" target="_blank" rel="noopener noreferrer">
+            sitio oficial de FIFA </a
+          >.
         </p>
-        <a class="module-card__link" href="pages/fixture.html">
-          Ver fixture
-        </a>
-      </article>
+      </section>
 
-      <article class="module-card">
-        <h3>Estadios</h3>
-        <p>
-          Conocé algunas de las sedes y estadios donde se disputará el torneo.
-        </p>
-        <a class="module-card__link" href="pages/estadios.html">
-          Ver estadios
-        </a>
-      </article>
-    </div>
-  </section>
+      <section class="home-survey">
+        <div class="section-heading">
+          <h2>Encuesta rápida</h2>
+          <p>
+            Contanos cómo seguís el Mundial 2026 y desde qué dispositivos lo
+            mirás.
+          </p>
+        </div>
+        <form
+          class="survey-form"
+          action="https://httpbin.org/post"
+          method="post"
+        >
+          <div class="survey-form__group">
+            <label for="seleccion-favorita">¿Cuál es tu selección favorita?</label>
 
-  <section id="informacion" class="home-info">
-    <h2>Información general</h2>
+            <select id="seleccion-favorita" name="seleccion_favorita" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="francia">Francia</option>
+              <option value="espana">España</option>
+              <option value="otra">Otra</option>
+            </select>
+          </div>
 
-    <p>
-      El Mundial 2026 será organizado por México, Canadá y Estados Unidos.
-      Esta edición tendrá una estructura ampliada, con más selecciones y más
-      partidos que ediciones anteriores.
-    </p>
+          <div class="survey-form__group">
+            <label for="dispositivo">¿Qué dispositivo utilizás para ver el Mundial?</label>
 
-    <p>
-      Para conocer más información oficial sobre el torneo, podés visitar el
-      <a href="https://www.fifa.com/" target="_blank">
-        sitio oficial de FIFA
-      </a>.
-    </p>
-  </section>
-</main>
+            <select id="dispositivo" name="dispositivo" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="tv">TV</option>
+              <option value="notebook">Notebook</option>
+              <option value="tablet">Tablet</option>
+              <option value="celular">Celular</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="survey-form__group">
+            <label for="plataforma">¿Por qué plataforma ves el mundial?</label>
+
+            <select id="plataforma" name="plataforma" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="disney">Disney</option>
+              <option value="directv">DirecTV</option>
+              <option value="paramount">Paramount</option>
+              <option value="flow">Flow</option>
+              <option value="aire">Por aire</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="survey-form__group">
+            <label for="proveedor">¿Qué proveedor de internet contratás?</label>
+
+            <select id="proveedor" name="proveedor" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="movistar">Movistar</option>
+              <option value="claro">Claro</option>
+              <option value="personal">Personal</option>
+              <option value="westnet">Westnet</option>
+              <option value="arlink">Arlink</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="survey-form__group">
+            <label for="seccion-interes">¿Qué sección de la página te interesa más?</label>
+            <select id="seccion-interes" name="seccion_interes" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="fixture">Fixture</option>
+              <option value="selecciones">Selecciones</option>
+              <option value="estadios">Estadios</option>
+              <option value="resultados">Resultados</option>
+            </select>
+          </div>
+          <button class="button button--primary" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <p class="site-footer__text">
         Proyecto realizado para Práctica Profesionalizante I -
         <a
           class="site-footer__link"
-          href="https://www.iesmb.edu.ar/bel/" 
+          href="https://www.iesmb.edu.ar/bel/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           IES Manuel Belgrano
         </a>

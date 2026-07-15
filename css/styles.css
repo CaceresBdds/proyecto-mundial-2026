@@ -682,6 +682,50 @@ main {
 }
 
 /* =========================
+   Home survey
+========================= */
+
+.home-survey {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.survey-form {
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 22px;
+  background-color: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.survey-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.survey-form__group label {
+  font-weight: bold;
+  color: #111827;
+}
+
+.survey-form__group select {
+  padding: 12px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: white;
+  color: #111827;
+}
+
+.survey-form__group select:focus {
+  outline: none;
+  border-color: #b00020;
+}
+
+/* =========================
    Responsive
 ========================= */
 
@@ -729,10 +773,10 @@ main {
   }
 
   .teams-grid {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 
-    .fixture-groups-section {
+  .fixture-groups-section {
     padding-left: 18px;
     padding-right: 18px;
   }
@@ -819,7 +863,7 @@ main {
     padding: 24px;
   }
 
-    .knockout-section {
+  .knockout-section {
     padding-left: 18px;
     padding-right: 18px;
   }
@@ -844,4 +888,13 @@ main {
   .grupo-fixture td {
     padding: 12px 14px;
   }
+
+  .home-survey {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.survey-form {
+  padding: 24px;
+}
 }
